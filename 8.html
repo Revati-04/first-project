@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>
+<?php
+	echo "welcome to php program!!!!<br>";
+?> 
+<h2>Lets solve a problem using operators in php<h2>
+<h3>
+<?php 
+	$a=120; 
+	$b=40; 
+	$c=$a+$b; 
+    $d=Sa*$b;
+	echo("The addition of a and b is ". $c); 
+    echo("<br>The multiplication of a and b is".$d);
+    ?>   
+<h2>Let's solve a problem using expressions in php</h2>
+<p>How many occurences of the letters "c" or "o" are in the text "GH Raisoni College of Engineering and Management":</p>
+
+<?php
+$txt = "GH Raisoni College of Engineering and Management";
+$pattern = "/[co]/";
+echo preg_match_all($pattern, $txt);
+?>  
+
+<p>The matches were found here:</p>
+
+<?php
+echo preg_replace($pattern, "#", $txt);
+?>  
+
+<p>(Each match was replaced by a # character)</p>
+
+</body>
+</html>

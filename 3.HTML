@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+.tablink:hover {
+  background-color: #777;
+}
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+#Home {background-color:lightskyblue;}
+#Personal {background-color: lightcoral;}
+#Education {background-color: lightseagreen;}
+#Hobbies {background-color: lightsalmon;}
+</style>
+</head>
+<body>
+<button class="tablink" onclick="openPage('Home', this, 'lightskyblue')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Personal', this, 'ligh')">Personal</button>
+<button class="tablink" onclick="openPage('Education', this, 'lightseagreen')">Education</button>
+<button class="tablink" onclick="openPage('Hobbies', this, 'lightsalmon')">Hobbies</button>
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>THIS SHOWS PROFILE INFORMATION!!</p>
+</div>
+<div id="Personal" class="tabcontent">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTiZzQfc_5zNh3DQLUyvj_mkkeQM3thvrDHPJWYCwlsCJ0ZkkiiX8ZyGioLJ4yf-vA1Mw&usqp=CAU">
+  <p>NAME:- Revati Padgilwar</p>
+  <p>FATHERS NAME:- Rajesh Padgilwar</p>
+  <p>MOTHERS NAME:- Pranita Padgilwar</p>
+  <p>DOB:- 26/05/2004</p>
+  <p>ADDRESS:- Yavatmal</p>
+  <p>CONTACT NO.:- 8857030151</p>
+  <p>EMAIL ID:- revatipadgilwar@gmail.com</p>
+</div>
+<div id="Education" class="tabcontent">
+  <center><img src="https://en.pimg.jp/040/579/477/1/40579477.jpg" width="200" height="300">
+  <p>PRIMARY EDUCATION:-Yavatmal Public School</p>
+  <p>SECONDARY EDUCATION:-Peoples Jr. College</p>
+  <p>Currently studying at GH Raisoni College Of Engineering</p>
+  <p>BTECH IN CSE(AI)</p>
+  <p>DEPARTMENT OF ARTIFICAL INTELLIGENCE</p>
+</div>
+<div id="Hobbies" class="tabcontent">
+  <h3>Hobbies</h3>
+  <center><img src="https://cdn.dribbble.com/users/307731/screenshots/2534005/media/edb3197ff2daf9399ec7bd3c7b3dc2c6.png" width="300" height="200">
+    <p>Listening to music</p>
+    <p>Dancing</p>
+    <p>Travelling</p>
+    <p>Learning Languages</p>
+</div>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</script>
+</body>
+</html>
+
+

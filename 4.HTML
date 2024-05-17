@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+  <style>
+    /* Style tab links */
+.tablink {
+  background-color:rgb(214, 18, 51) ;
+  color:black;
+  float: right;
+  border:rosybrown;
+  outline: rgb(233, 53, 113);
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+  </style>
+<div class="w3-container">
+  <h2>PROFILE PAGE</h2>
+  <div class="w3-panel w3-topbar w3-bottombar w3-round w3-border-red w3-pale-blue">WELCOME TO MY PROFILE PAGE!!</div>
+  <div class="w3-bar w3-black">
+<div id="PERSONAL INFO" class="w3-container w3-khaki w3-cursive w3-border city">
+<img src="https://cdn-icons-png.flaticon.com/512/219/219969.png"class="w3-circle w3-display-middle" width="300">
+<b>
+<i>
+<FONT COLOR="black">
+  <p>NAME:- Revati Padgilwar</p>
+  <p>FATHERS NAME:- Rajesh Padgilwar</p>
+  <p>MOTHERS NAME:- Pranita Padgilwar</p>
+  <p>DOB:- 26/05/2004</p>
+  <p>ADDRESS:- Yavatmal</p>
+  <p>CONTACT NO.:- 8857030151</p>
+  <p>EMAIL ID:- revatipadgilwar@gmail.com</p>
+  <p>PRIMARY EDUCATION:-Yavatmal Public School</p>
+  <p>SECONDARY EDUCATION:-Peoples Jr. College</p>
+  <p>Currently studying at GH Raisoni College Of Engineering</p>
+  <p>BTECH IN CSE(AI)</p>
+  <p>DEPARTMENT OF ARTIFICAL INTELLIGENCE</p>
+</div>                                                            
+</div>
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+</body>
+</html>
